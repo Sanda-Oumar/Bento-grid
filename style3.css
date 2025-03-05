@@ -1,90 +1,319 @@
+/* Général */
 * {
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #e7e6f0;
+}
+
+.container {
+  width: 80%;
+  margin: 10 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: #cf1010;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+section {
+  padding: 40px 0;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.project {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.contact-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .social-icons {
+      flex-direction: column;
+  }
+}
+.profile-pic {
+  width: 150px; /* Ajuste la taille de l'image */
+  height: 180px; /* Ajuste la hauteur de l'image */
+  border-radius: 60%; /* Garde l'image circulaire */
+  border: 5px solid #fff; /* Bordure blanche autour de l'image */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Ombre légère pour l'effet */
+  object-fit: cover; /* Garantit que l'image s'ajuste sans déformation */
+}
+/* Conteneur pour les images d'événements */
+.event-img {
+  display: flex;
+  flex-wrap: wrap;  /* Pour que les images se placent automatiquement sur plusieurs lignes */
+  gap: 20px;  /* Espacement entre les images */
+  justify-content: center;  /* Centrer les images */
+}
+
+/* Styles pour chaque image d'événement */
+.event-img {
+  width: 200px; /* Ajuste la largeur de chaque image */
+  height: 200px; /* Ajuste la hauteur de chaque image */
+  object-fit: cover; /* Permet de recadrer l'image sans la déformer */
+  border-radius: 10px; /* Coins arrondis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre pour un effet 3D */
+  transition: transform 0.3s ease; /* Effet au survol */
+}
+
+/* Effet au survol pour les images des événements */
+.event-img:hover {
+  transform: scale(1.05);  /* Agrandit l'image au survol */
+  cursor: pointer; /* Change le curseur pour une meilleure interaction */
+}
+/* Conteneur pour les icônes sociales */
+.social-icons {
+  display: flex;
+  justify-content: center; /* Centrer les icônes */
+  gap: 20px;  /* Espacement entre les icônes */
+  margin-top: 20px; /* Marge au-dessus */
+}
+
+/* Styles pour chaque icône */
+.social-icons a {
+  display: inline-block;
+  width: 40px; /* Taille de l'icône */
+  height: 40px; /* Taille de l'icône */
+  background-color: #3ecc13; /* Couleur de fond (tu peux personnaliser) */
+  border-radius: 50%; /* Icône ronde */
+  display: flex;
+  align-items: center;  /* Centrer l'icône à l'intérieur du cercle */
+  justify-content: center;  /* Centrer l'icône à l'intérieur du cercle */
+  transition: transform 0.3s ease; /* Effet au survol */
+}
+
+/* Styles pour chaque icône (lors du survol) */
+.social-icons a:hover {
+  transform: scale(1.1); /* Agrandir légèrement l'icône au survol */
+  background-color: #aea2ca; /* Changer la couleur de fond au survol (par exemple LinkedIn) */
+}
+
+/* Icones à l'intérieur de l'élément de lien */
+.social-icons i {
+  color: white; /* Couleur de l'icône */
+  font-size: 24px; /* Taille de l'icône */
+}
+/* Style global du pied de page */
+footer {
+  background-color: #333; /* Fond sombre */
+  color: white; /* Texte blanc */
+  padding: 20px; /* Espacement autour du contenu */
+  text-align: center; /* Centrer le texte */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  margin-top: 30px; /* Espacement au-dessus du pied de page */
+}
+
+/* Conteneur pour les liens sociaux et le texte */
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Empiler les éléments en colonne */
+  align-items: center; /* Centrer horizontalement */
+  gap: 20px; /* Espacement entre les sections */
+}
+
+/* Section des icônes sociales */
+.social-icons-footer {
+  display: flex;
+  gap: 20px; /* Espacement entre les icônes */
+}
+
+/* Style des icônes sociales */
+.social-icons-footer a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #555; /* Fond de l'icône */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icons-footer a:hover {
+  background-color: #0077b5; /* Couleur au survol */
+  transform: scale(1.1); /* Agrandissement au survol */
+}
+
+/* Couleur des icônes */
+.social-icons-footer i {
+  color: white;
+  font-size: 20px;
+}
+
+/* Texte de copyright et informations de contact */
+footer p {
+  font-size: 14px; /* Taille du texte */
+  margin: 0; /* Supprimer la marge */
+  color: #bbb; /* Couleur claire pour le texte */
+}
+
+footer a {
+  color: #fff; /* Lien blanc */
+  text-decoration: none; /* Supprimer le soulignement */
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: #0077b5; /* Changer la couleur au survol */
+  text-decoration: underline; /* Souligner au survol */
+}
+/* Styles pour la section Photos */
+#photos {
+  padding: 50px 0;
+  background-color: #f4f4f4;
+}
+
+#photos h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#photos p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.photo-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.photo {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.download-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.download-btn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+/* Style du menu vertical */
+nav.nav-vertical {
+    position: fixed; /* Fixe le menu sur le côté */
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 200px; /* Largeur du menu */
+    background-color: #333; /* Fond sombre */
+    padding-top: 20px; /* Espacement du haut */
+}
+
+nav.nav-vertical ul {
+    list-style-type: none; /* Enlève les puces */
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f8f9fc;
-  }
-  
-  .container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    max-width: 1200px;
-  }
-  
-  .box {
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-  }
-  
-  .large {
-    grid-column: span 2;
-    text-align: center;
-  }
-  
-  .purple {
-    background-color: #7c4dff;
-  }
-  
-  .beige {
-    background-color: #f8e9d2;
-    color: #000;
-  }
-  
-  .yellow {
-    background-color: #ffc107;
-    color: #000;
-  }
-  
-  .white {
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #ffc107;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #ffb300;
-  }
-  
-  .chat {
-    margin-top: 10px;
-    padding: 10px;
-    background: #fff;
-    color: #000;
-    border-radius: 5px;
-  }
-  
-  .chart {
-    margin-top: 10px;
-    text-align: center;
-  }
-  
-  .stats {
-    margin-top: 10px;
-    font-size: 1.1em;
-    line-height: 1.5;
-  }
-  
-  img {
-    width: 100%;
-    
-  }
-  
+    margin: 0;
+}
+
+nav.nav-vertical li {
+    text-align: center; /* Centre les éléments du menu */
+    padding: 15px 0;
+}
+
+nav.nav-vertical a {
+    display: block; /* Le lien prend toute la largeur de la case */
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Enlève le soulignement des liens */
+    font-size: 18px;
+}
+
+nav.nav-vertical a:hover {
+    background-color: #575757; /* Change la couleur de fond au survol */
+}
