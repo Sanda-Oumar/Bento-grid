@@ -1,55 +1,243 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Social Media with AI</title>
-  <link rel="stylesheet" href="style3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oumar Moussa</title>
+    <link rel="stylesheet" href="style1.css">
+    <style>
+        /* Ajout de styles pour masquer les sections par défaut */
+        section {
+            display: none;
+        }
+
+        /* Affichage des sections lorsque l'on clique sur un lien du menu */
+        .active {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <div class="box large purple">
-      <h1>Social Media <span>10x</span> Faster with AI</h1>
-      <img src="images/illustration-five-stars.webp" alt="ma photo" title="Ing">
-      <p>⭐️⭐️⭐️⭐️⭐️ Over 4,000 5-star reviews</p>
+    <header>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <div class="logo">
+            <h1>My Portfolio</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0)" onclick="showSection('about')">About me</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('projects')">Projets</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('events')">Events</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('photos')">Photos</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about" class="active">
+        <div class="container">
+            <h2>About me</h2>
+            <div class="profile">
+                <img src="oumar.jpg" alt="Photo de Profil" class="profile-pic">
+                <p>
+                  Welcome! I am <strong>Eng.Oumar Moussa,</strong>  passionate about artificial intelligence, machine learning and optimization. 🌍✨
+
+                  My work revolves around high-impact projects in health, agriculture and education, where I seek to transform data into intelligent solutions. My goal? To use the power of AI to create innovations that concretely improve people's lives. 💡🤖
+
+                  Curious and always looking for new challenges, I believe in technology at the service of humanity. 🚀 Ready to build the future together?
+                </p>
+                <br><br><br> 
+                <p>
+                  Bienvenue ! Je suis <strong>Ing.Oumar Moussa</strong> , un passionné d'intelligence artificielle, de machine learning et d’optimisation. 🌍✨
+
+                  Mon travail s’articule autour de projets à fort impact dans la santé, l’agriculture et l’éducation, où je cherche à transformer les données en solutions intelligentes. Mon objectif ? Utiliser la puissance de l’IA pour créer des innovations qui améliorent concrètement la vie des gens. 💡🤖
+                  
+                  Curieux et toujours en quête de nouveaux défis, je crois en une technologie au service de l’humain. 🚀 Prêt à bâtir l’avenir ensemble ?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects Completed</h2>
+
+
+        
+            <div class="project">
+              <h3>Malaria Prediction</h3>
+              <p><strong>📌 Malaria Prediction with Machine Learning</strong></p>
+
+              <p>In this project, I developed an <strong>advanced machine learning</strong> model for <strong>malaria prediction</strong>, leveraging <strong>clinical and demographic data</strong>. The goal is to identify patients at risk with <strong>high accuracy</strong>, thus facilitating early and effective management.</p>
+              
+              <p><strong>🔍 Key approaches used:</strong><br>
+              ✔ Data preprocessing to improve model quality and robustness<br>
+              ✔ Oversampling techniques to manage class imbalance and optimize performance<br>
+              ✔ Interpretability with LIME to explain model decisions and build healthcare professionals' confidence</p>
+              
+              <p><strong>🚀 Impact:</strong> This project contributes to better detection of malaria cases, thus optimizing prevention and treatment efforts in high-incidence areas.</p>
+              
+              <p><strong>💡 Technologies used:</strong> Python, Scikit-learn, Pandas, LIME, Matplotlib, Seaborn.</p>
+              
+              <p><a href="https://github.com/Sanda-Oumar/Malaria_Prediction_Project-" target="_blank"><strong>🔗 Learn more about GitHub</strong></a></p>
+            </div>
+
+            <div class="project">
+              <h3>Breast Cancer Prediction</h3>
+              <p><strong>📌 Early Detection of Breast Cancer with Machine Learning</strong></p>
+              
+              <p>This project aims to develop a <strong>machine learning</strong> model capable of detecting breast cancer from medical data. The goal is to help healthcare professionals quickly identify at-risk cases and improve patient care.</p>
+              
+              <p><strong>🔍 Key approaches used:</strong><br>
+              ✔ Comparison of several algorithms: <strong>Logistic Regression, SVM, k-NN, Decision Tree, Naïve Bayes and XGBoost</strong><br>
+              ✔ Analysis of model performance using <strong>evaluation metrics</strong> such as accuracy, precision, recall and F1-score<br>
+              ✔ Explainability of predictions with <strong>LIME</strong> to strengthen the confidence of healthcare professionals</p>
+              
+              <p><strong>🚀 Impact:</strong> Thanks to this approach, it is possible to improve early detection of breast cancer and optimize medical decisions, thus reducing the mortality rate associated with this disease. disease.</p>
+              
+              <p><strong>💡 Technologies used:</strong> Python, Scikit-learn, Pandas, Matplotlib, Seaborn, LIME.</p>
+              
+              <p><a href="https://github.com/Sanda-Oumar/Breast_Cancer_prediction_AI" target="_blank"><strong>🔗 Learn more about GitHub</strong></a></p>
+              </div>
+
+
+            <div class="project">
+                <h3>Prédiction du Paludisme</h3>
+                <p><strong>📌 Prédiction du Paludisme avec le Machine Learning</strong></p>
+
+  <p>Dans ce projet, j’ai développé un modèle de <strong>machine learning avancé</strong> pour la <strong>prédiction du paludisme</strong>, en exploitant des <strong>données cliniques et démographiques</strong>. L’objectif est d’identifier les patients à risque avec <strong>une haute précision</strong>, facilitant ainsi une prise en charge précoce et efficace.</p>
+
+<p><strong>🔍 Approches clés utilisées :</strong><br>
+✔ Prétraitement des données pour améliorer la qualité et la robustesse du modèle<br>
+✔ Techniques d’oversampling pour gérer le déséquilibre des classes et optimiser les performances<br>
+✔ Interprétabilité avec LIME pour expliquer les décisions du modèle et renforcer la confiance des professionnels de santé</p>
+
+<p><strong>🚀 Impact :</strong> Ce projet contribue à une meilleure détection des cas de paludisme, optimisant ainsi les efforts de prévention et de traitement dans les zones à forte incidence.</p>
+
+<p><strong>💡 Technologies utilisées :</strong> Python, Scikit-learn, Pandas, LIME, Matplotlib, Seaborn.</p>
+
+<p><a href="https://github.com/Sanda-Oumar/Malaria_Prediction_Project-" target="_blank"><strong>🔗 En savoir plus sur GitHub</strong></a></p>
+
+          
+        </div>
+
+            <div class="project">
+
+            <p><strong>📌 Détection Précoce du Cancer du Sein avec le Machine Learning</strong></p>
+
+<p>Ce projet vise à développer un modèle de <strong>machine learning</strong> capable de détecter le cancer du sein à partir de données médicales. L’objectif est d’aider les professionnels de santé à identifier rapidement les cas à risque et à améliorer la prise en charge des patientes.</p>
+
+<p><strong>🔍 Approches clés utilisées :</strong><br>
+✔ Comparaison de plusieurs algorithmes : <strong>Régression Logistique, SVM, k-NN, Arbre de Décision, Naïve Bayes et XGBoost</strong><br>
+✔ Analyse des performances des modèles à l’aide de <strong>métriques d’évaluation</strong> telles que l’accuracy, la précision, le recall et le F1-score<br>
+✔ Explicabilité des prédictions avec <strong>LIME</strong> pour renforcer la confiance des professionnels de santé</p>
+
+<p><strong>🚀 Impact :</strong> Grâce à cette approche, il est possible d’améliorer le dépistage précoce du cancer du sein et d’optimiser les décisions médicales, réduisant ainsi le taux de mortalité associé à cette maladie.</p>
+
+<p><strong>💡 Technologies utilisées :</strong> Python, Scikit-learn, Pandas, Matplotlib, Seaborn, LIME.</p>
+
+<p><a href="https://github.com/Sanda-Oumar/Breast_Cancer_prediction_AI" target="_blank"><strong>🔗 En savoir plus sur GitHub</strong></a></p>
+       </div>
+
+
+       <div class="project">
+        <h3>Analyse Cognitive et Éducation</h3>
+        <p>
+            Recherche sur les facteurs influençant l'intelligence verbale chez les enfants, avec des analyses de données sur la lecture
+            et l'éducation maternelle.(Projet encours)
+        </p>
     </div>
-    <div class="box small beige">
-      <h2>Create and schedule content <span>quicker.</span></h2>
-      <button>quicker</button>
-      <img src="images/illustration-create-post.webp" alt="ma photo" title="Ing">
-    </div>
-    <div class="box small yellow">
-      <h2>Write your content using AI.</h2>
-      <div class="chat">
-        <img src="images/illustration-ai-content.webp" alt="ma photo" title="Ing">
+            <!-- Ajoutez d'autres projets ici -->
+        </div>
+    </section>
+
+    <section id="events">
+        <div class="container">
+            <h2>Événements et Conférences</h2>
+            <div class="event">
+                <img src="oumar.jpg" alt="Événement 1" class="event-img">
+                <div class="event-description">
+                    <h3>Conférence sur l'IA en Santé</h3>
+                    <p>
+                        J'ai eu l'opportunité d'assister à la conférence "IA en Santé", où des experts mondiaux ont discuté des avancées récentes
+                        en intelligence artificielle et de son impact sur les soins de santé. Un événement très enrichissant.
+                    </p>
+                </div>
+            </div>
+            <div class="event">
+                <img src="event-photo2.jpg" alt="Événement 2" class="event-img">
+                <div class="event-description">
+                    <h3>Workshop sur le Machine Learning</h3>
+                    <p>
+                        J'ai participé à un workshop sur le machine learning, où j'ai appris de nouvelles techniques et échangé avec des chercheurs
+                        et professionnels du domaine. Un excellent moment pour élargir mes compétences.
+                    </p>
+                </div>
+            </div>
+            <!-- Ajoutez d'autres événements ici -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contactez-moi</h2>
+            <p>Vous pouvez me contacter en remplissant le formulaire ci-dessous :</p>
+            <a href="https://forms.gle/tonliengoogleform" target="_blank" class="contact-btn">Formulaire de Contact</a>
+        </div>
+    </section>
+    
+    <section id="photos">
+        <div class="container">
+            <h2>Mes Photos</h2>
+            <p>Voici quelques-unes de mes photos. Vous pouvez les télécharger si vous le souhaitez.</p>
+            <div class="photo-gallery">
+                <div class="photo">
+                    <img src="oumar.jpg" alt="Photo 1">
+                    <a href="photo1.jpg" download="photo1.jpg" class="download-btn">Télécharger</a>
+                </div>
+                <div class="photo">
+                    <img src="photo2.jpg" alt="Photo 2">
+                    <a href="photo2.jpg" download="photo2.jpg" class="download-btn">Télécharger</a>
+                </div>
+                <div class="photo">
+                    <img src="photo3.jpg" alt="Photo 3">
+                    <a href="photo3.jpg" download="photo3.jpg" class="download-btn">Télécharger</a>
+                </div>
+                <!-- Ajoute d'autres photos ici -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+      // Fonction pour afficher la section active
+      function showSection(sectionId) {
+          // Cacher toutes les sections
+          const sections = document.querySelectorAll('section');
+          sections.forEach(section => {
+              section.classList.remove('active');
+          });
+
+          // Afficher la section choisie
+          const section = document.getElementById(sectionId);
+          section.classList.add('active');
+      }
+  </script>
+    <footer>
+      <div class="footer-content">
+          <!-- Icônes sociales -->
+          <div class="social-icons-footer">
+              <a href="https://facebook.com/@Oumar Moussa Hamadjam" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://wa.me/+237693492560" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a href="https://www.tiktok.com/@Oumar Moussa Hamadjam" target="_blank"><i class="fab fa-tiktok"></i></a>
+              <a href="https://youtube.com/channel/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+              <a href="mailto:oumarmoussa299@gmail.com"><i class="fas fa-envelope"></i></a>
+          </div>
+          <!-- Texte de copyright et autres infos -->
+          <p>© 2025 Ton Nom | <a href="mailto:youremail@example.com">Contactez-moi</a></p>
       </div>
-    </div>
-    <div class="box small white">
-      <img src="images/illustration-multiple-platforms.webp" alt="ma photo" title="Ing">
-      <h2>Manage multiple accounts and platforms.</h2>
-    </div>
-    <div class="box small yellow">
-      <h2>Maintain a consistent posting schedule.</h2>
-      <img src="images/illustration-consistent-schedule.webp" alt="ma photo" title="Ing">
-    </div>
-    <div class="box small purple">
-      <h2>Schedule to social media.</h2>
-      <img src="images/illustration-schedule-posts.webp" alt="ma photo" title="Ing">
-      <p> Optimize post timings to publish content at the perfect time for your audience.</p>
-    </div>
-    <div class="box small white">
-      <h1>&gt;56% </h1>
-      <h3>faster audience growth</h3>
-      <img src="images/illustration-audience-growth.webp" alt="Avatars">
-    </div>
-    <div class="box small purple">
-      <h2>Grow followers with non-stop content.</h2>
-      <img src="images/illustration-grow-followers.webp" alt="Avatars">
-      <div class="stats">
-        <!--<p>Follower Growth: 20,642</p>-->
-        <!--<p>Followers: 89,532</p>-->
-      </div>
-    </div>
-  </div>
+    </footer>
+
+
 </body>
 </html>
